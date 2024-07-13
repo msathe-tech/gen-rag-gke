@@ -1,6 +1,7 @@
 # Overview 
 
-We will build a RAG application deployed on GKE and GCP stack. 
+Organizations can drive differentiating value by powering their business critical application using LLMs, RAG and CI/CD across all the stages of RAG.
+We will focus on cloud portable RAG application that can scale well with managed Kuberenetes service.
 We will use PostgreSQL as a OSS Vector DB and deploy it on GKE for scalability. 
 We will use Gemini's embedings API to build vector embedings and then store in the PostgreSQL. 
 Follow the docs here - https://cloud.google.com/kubernetes-engine/docs/tutorials/deploy-pgvector. 
