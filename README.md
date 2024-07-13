@@ -4,12 +4,17 @@
 
 Organizations can unlock significant value by integrating Large Language Models (LLMs) and MLOps across the stages of Retrieval-Augmented Generation (RAG) in their business-critical applications. However, enterprises often face challenges in meeting the high expectations of GenAI-driven business outcomes. Bridging this gap requires meticulous planning in governance, continuous evaluation, seamless scaling, operational costs, and time-to-market.
 
-In this session, we will share evolving patterns and practices that enterprises can adopt using open standards. Attendees will witness a live demonstration of a RAG application stack built with LangChain, Canopy, and a PostgreSQL Vector database, all deployed on Kubernetes. Additionally, the audience will gain insights into MLOps strategies for data splitting, embeddings, retrieval, and prompt engineering. Join us to explore how to effectively leverage MLOps with Kuberentes to achieve scalable and impactful GenAI solutions.
-
+In this session, we will share proven patterns and practices that enterprises can adopt using open standards. Attendees will witness a live demonstration of a RAG application stack built with LangChain, Canopy, and a PostgreSQL Vector database, all deployed on Kubernetes. Additionally, we will discuss leveraging GPU and TPU accelerators for Kubernetes to enhance computational efficiency. The audience will also gain insights into MLOps strategies for data splitting, embeddings, retrieval, and prompt engineering. Join us to explore how to effectively leverage MLOps with Kuberetes to achieve scalable and impactful GenAI solutions.
 
 https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cfp/
 
 ## Scatchpad 
+
+We will demonstrate supercharging the applications using accelerators such as GPUs and TPUs. 
+
+We will leverage Kuberetes with accelerators such as GPUs & TPUs. 
+
+
 [7:05 PM] Jitender Kumar
 During the learning process, emphasis is on automation streamlines repetitive tasks such as data preprocessing, model training, and deployment, leading to faster and more efficient workflows. Focus will be on  Devops/automation and MLOps to facilitate the seamless scaling of AI solution for teams to reduce operational costs, and accelerate time-to-market for data-driven innovations.
  
