@@ -8,6 +8,8 @@ In this session, we will share proven patterns and practices that enterprises ca
 
 https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cfp/
 
+
+jiten.kumar@gmail.com
 ## Scatchpad 
 
 We will demonstrate supercharging the applications using accelerators such as GPUs and TPUs. 
