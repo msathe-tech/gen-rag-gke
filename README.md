@@ -2,9 +2,8 @@
 # Brag Your RAG With Kubernetes Swag
 # Barg Your RAG With GKE Swag
 
-Organizations are beginning to unlock significant value by integrating Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) into their business-critical processes. However, enterprises often face challenges in meeting the high expectations of GenAI-driven business outcomes. Bridging this gap requires meticulous planning in governance, continuous evaluation, seamless scaling, operational costs, and time-to-market.
-
-In this session, we will share evolving patterns and practices that enterprises can adopt using open standards. Attendees will witness a live demonstration of a RAG application stack built with LangChain, Canopy, and a PostgreSQL Vector database, all deployed on Kubernetes. Additionally, we will discuss leveraging GPU and TPU accelerators to enhance computational efficiency. The audience will also gain insights into MLOps strategies for data splitting, embeddings, retrieval, and prompt engineering. Join us to explore how to effectively leverage MLOps with Kuberetes to achieve scalable and impactful GenAI solutions.
+Organizations are beginning to unlock significant value by integrating Large Language Models (LLMs) & Retrieval-Augmented Generation (RAG) into their business-critical processes. However, enterprises often face challenges in meeting the high expectations of GenAI-driven business outcomes. Bridging this gap requires meticulous planning in governance, continuous evaluation, seamless scaling, operational costs, and time-to-market.
+In this session, attendees will witness a live demonstration of a RAG application stack built with LangChain, Canopy, and a PostgreSQL Vector database, all deployed on Kubernetes. Additionally, we will discuss leveraging GPU and TPU accelerators to enhance computational efficiency. The audience will also gain insights into MLOps strategies for data splitting, embeddings, retrieval, and prompt engineering. Join us to explore how to effectively leverage MLOps with Kubernetes to achieve scalable and impactful GenAI solutions.
 
 https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cfp/
 
