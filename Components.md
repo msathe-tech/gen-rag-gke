@@ -30,5 +30,6 @@ Use Olympics 2024 articles and videos for RAG use case, will help demonstarte mu
 # Program plan 
 1. Install Canopy on K8s - (Canopy)[https://github.com/pinecone-io/canopy/blob/main/docs/deployment-gcp.md]
 2. Integrate Canopy with Pinecone VectorDB service
-3. Data collection for Paris olympics articles from Wikipedia, Youtube
+3. Run the Canopy sample code from [[here](https://github.com/pinecone-io/canopy/blob/main/examples/canopy-lib-quickstart.ipynb)]
+4. Data collection for Paris olympics articles from Wikipedia, Youtube
 
