@@ -1,0 +1,15 @@
+[theme]
+base="light"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+enableCORS = false
+
+[global]
+showWarningOnDirectExecution = false
+
+[ui]
+hideMenu = true
+hideFooter = true
