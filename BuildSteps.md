@@ -14,8 +14,7 @@ Create the Docker image for Canopy by running the following command:
 
 ```bash
 docker build -t canopy:1 .
-docker run -d -e PINECONE_API_KEY=<pinecone-id> -e OPENAI_API_KEY=<openai-id>  -e INDEX_NAME=canopy--langchain -p 8000:8000 canopy:1
-```
+docker run -d -e PINECONE_API_KEY=$PINECONE_API_KEY -e OPENAI_API_KEY=$OPENAI_API_KEY  -e INDEX_NAME=canopy--langchain -p 8000:8000 canopy:1```
 
 ### 3. Set Required Environment Variables
 
