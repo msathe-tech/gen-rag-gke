@@ -1,0 +1,17 @@
+streamlit
+# pinecone-client
+# langchain
+# langchain-community
+langchain               
+langchain-community       
+langchain-core           
+langchain-openai          
+langchain-pinecone        
+langchain-text-splitters  
+langsmith
+openai
+pinecone-client          
+pinecone-notebooks        
+pinecone-plugin-inference 
+pinecone-plugin-interface 
+            
