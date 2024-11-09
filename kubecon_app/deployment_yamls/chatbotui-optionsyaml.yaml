@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatbotui-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatbotui
+  template:
+    metadata:
+      labels:
+        app: chatbotui
+    spec:
+      containers:
+        - name: chatbotui
+          image: chatbotui:2
+          ports:
+            - containerPort: 8501
+          resources:
+            limits:
+              memory: "1Gi"
+              cpu: "1"
+            requests:
+              memory: "1Gi"
+              cpu: "1"
+          env:
+            - name: CUSTOM_API_URL
+              value: "http://host.docker.internal:8000/v1/test-1/chat/completions"
+            - name: CUSTOM_API_URL_OPB
+              value: "http://host.docker.internal:8000/v1/chat/completions"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chatbotui-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8501
+      targetPort: 8501
+  selector:
+    app: chatbotui

@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: canopy-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: canopy
+  template:
+    metadata:
+      labels:
+        app: canopy
+    spec:
+      containers:
+        - name: canopy
+          image: canopy:1
+          ports:
+            - containerPort: 8000
+          resources:
+            limits:
+              memory: "1Gi"
+              cpu: "1"
+            requests:
+              memory: "1Gi"
+              cpu: "1"
+          env:
+            - name: PINECONE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-keys
+                  key: PINECONE_API_KEY
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-keys
+                  key: OPENAI_API_KEY
+            - name: INDEX_NAME
+              value: "canopy--langchain"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: canopy-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8000
+      targetPort: 8000
+  selector:
+    app: canopy
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: api-keys
+type: Opaque
+data:
+  PINECONE_API_KEY: <base64_encoded_value>
+  OPENAI_API_KEY: <base64_encoded_value>
